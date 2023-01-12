@@ -22,6 +22,9 @@ h1 {
 p {
     margin-top: 4px;
 }
+section p{
+    margin: 10px 20px;
+}
 .icon-filtre,
 .icon-info,
 .etoile,
@@ -183,7 +186,7 @@ form input{
 .description p {    
     font-size: 14px;
     font-weight: 400;
-    margin: 10px 0 0 44px;
+    margin: 5px 0px 0px 0px;
 }
 .prix {
     flex: 1;
@@ -375,9 +378,6 @@ footer p {
     .body-gap {
         padding-left: 20px;
     }
-    .filtres {
-        font-size: 11px;
-    }
     header {
         height: 130px;
         flex-direction: column;
@@ -410,9 +410,6 @@ footer p {
     h1{
         margin: 20px 20px 0px 20px;
     }
-    p{
-        margin: 0px 20px 0px 20px;
-    }
     form{
         margin: 20px;
     }
@@ -422,6 +419,9 @@ footer p {
     }
     .bouton-filtre {
         width: 43vw;
+    }
+    .bouton-filtre p{
+        margin: 0px 20px 0px 20px;
     }
     .icon-filtre {
         margin: 0 3px 0 8px;
