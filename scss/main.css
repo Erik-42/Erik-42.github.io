@@ -1,0 +1,65 @@
+@font-face {
+            font-family: orchidee;
+            src: url("./assets/fonts/ORCHL.TTF");}
+* {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    line-height: 142.6%;
+    color: black;
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3%;
+}
+.header-titre {
+    font-family:orchidee; 
+}
+.header-nav-bar {
+    display:flex;
+    justify-content:center;
+}
+.header-nav-bar-about {
+}
+.header-nav-bar-accueil {
+}
+.header-nav-bar-realisations {
+}
+.header-nav-bar-services {
+}
+.header-cadre-image {
+    border-radius: 50%;
+    width: 350px;
+    background-color: blueviolet;
+}
+.header-cadre-image-photo-profil {
+    position: absolute;
+}
+.presentation {
+}
+.realisation {
+}
+.services {
+}
+.footer {
+}
+.footer-legal {
+}
+.footer-logo {
+}
+.footer-reseaux {
+}
+.footer-reseaux-logo {
+}
+.facebook {
+}
+.github {
+}
+.linkedin {
+}
