@@ -30,7 +30,7 @@ h2{
 
 .header-titre {
     font-family:orchidee;
-    shadow:2px grey; 
+    text-shadow: #5e5b5b;
 }
 .header-nav-bar {
     display:flex;
@@ -81,11 +81,11 @@ h2{
       width: 500px;
       height: 500px;
       /* position: absolute; */
-    z-index: +1;
-    top: 200px;
-    left: 345px;
-    margin-top: -75px;
-    margin-left: -75px;
+      z-index: +1;
+      top: 200px;
+       left: 345px;
+       margin-top: -75px;
+       margin-left: -75px;
       border-radius: 50%;
       background-color: #e78515;
       display: flex;
@@ -99,14 +99,17 @@ h2{
       margin: 5px;
     }
 .header-reseaux {
+  width: 200px;
+  height: 200px;
     position: fixed;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    margin-top: 50px;
+    margin: 50px;
 }
 .header-reseaux-logo {
-    width: 3%;
+    width: 32px;
+    height: 32px;
     /* position: absolute; */
 }
 

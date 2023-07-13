@@ -1,0 +1,6 @@
+{
+    "vs-code-prettier-eslint.prettierLast": true,
+    "prettier.trailingComma": "all",
+    "prettier.resolveGlobalModules": true,
+    "prettier.jsxSingleQuote": true
+}

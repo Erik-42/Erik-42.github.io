@@ -17,9 +17,14 @@ You can click the Preview link to take a look at your changes.
   
 <!-- PROJECT LOGO -->
 <br />
+<div align="left">
+  <a href="https://github.com/Erik-42">
+    <img src="./assets/images/Logo_M 150x150.png" alt="Logo Basille_Corp" width="400" height="100">
+  </a>
+</div>
 <div align="center">
   <a href="https://github.com/Erik-42">
-    <img src="./frontend/src/images/Logo.webp" alt="Logo Basille_Corp" width="400" height="100">
+    <img src="./assets/images/coverWIP.webp" alt="ScreenShot" width="400" height="100">
   </a>
 </div>
 
