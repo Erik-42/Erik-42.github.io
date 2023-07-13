@@ -17,56 +17,129 @@
     <!-- <script src="https://kit.fontawesome.com/4ec6d39a0c.js" crossorigin="anonymous"></script> -->
     <!-- <script type="module" src="./js/app.js"></script>
     <script type="module" src="./js/main.js"></script> -->
-
 </head>
 
 <body>
-
     <header class="header">
-        <H1 class="header-titre">Erik Mesen</H1>
+        <div class="header-cadre">
+            <div class="header-cadre-circlePhoto">
+                <img src="./assets/images/photos/Photo-Mesen.jpg" alt="Erik Mesen">
+            </div>
+            <div class="header-cadre-coord">
+                <H1 class="header-titre">Erik Mesen</H1>
+                <!-- <p>7, rue des ruisseaux</p> -->
+                <!-- <p>Ger, 50850</p> -->
+                <p>France</p>
+                <h3>+33 7 68 25 25 09</h3>
+                <h3>erik.mesen@basillecorp.dev</h3>
+            </div>
+        </div>
+        <div class="header-quali">
+            <p>Créatif, Autonome, Curieux</p>
+            <p>Esprit d'analyse</p>
+            <p>Esprit d'équipe</p>
+            <p>Force de proposition</p>
+            <p>Capacités d'adaptation</p>
+        </div>
+        <div class="header-about">
+            <p>Développeur web junior, je suis dynamique et j’aime travailler en équipe pour relever des challenges
+                techniques. J’ai une bonne maîtrise des outils de développement et je suis en constante recherche
+                d’apprentissage.</p>
+        </div>
         <nav class="header-nav-bar">
             <a class="header-nav-bar-accueil" href="#">Accueil</a>
             <a class="header-nav-bar-about" href="#">About</a>
             <a class="header-nav-bar-services" href="#">Services</a>
             <a class="header-nav-bar-realisations" href="#">Réalisations</a>
         </nav>
-        <div class="header-cadre-image">
-            <img class="header-cadre-image-photo-profil" src="./assets/images/photos/Photo-Mesen.jpg"
-                alt="Photo Erik Mesen">
+        <div class="header-reseaux">
+            <img class="header-reseaux-logo linkedin" src="./assets/logos/logo_reseau/linkedIn-logo.png"
+                alt="Logo Linked-In">
+            <img class="header-reseaux-logo github" src="./assets/logos/logo_reseau/github-logo.png"
+                alt="Logo Github"></br>
+            <a href="#modalContact">Contact</a>
         </div>
     </header>
 
-    <main>
-        <section class="presentation">
-            <div>
-                <h2>Presentation</h2>
+    <main class="main">
+        <!-- <div class="grid-item col1"></div> -->
+        <section class="main-sidebar grid-item col1">
+            <h2>Compétences</h2>
+            <div class="main-sidebar-logo">
+                <h3>Langages</h3>
+                <ul>
+                    <li><img src="./assets/logos/logo_techno/logo-html-5-2048.png" alt="Logo HTML 5"></li>
+                    <li><img src="./assets/logos/logo_techno/css3.webp" alt="Logo CSS 3"></li>
+                    <li><img src="./assets/logos/logo_techno/javascript-icon-png-23.jpg" alt="Logo JavaScript"></li>
+                    <li><img src="./assets/logos/logo_techno/php-logo-png-transparent-svg-vector-bie-supply-1.webp"
+                            alt="Logo PHP"></li>
+                    <!-- Ajoutez d'autres logos de frameworks ici -->
+                </ul>
             </div>
-            <div>
-                <h3>Logos techno défile vers la droite</h3>
+            <div class="main-sidebar-logo">
+                <h3>Frameworks</h3>
+                <ul>
+                    <li><img src="./assets/logos/logo_techno/React_logo_logotype_emblem.webp" alt="Logo React"></li>
+                    <li><img src="./assets/logos/logo_techno/sass_icon-512.webp" alt="Logo SCSS"></li>
+                    <li><img src="./assets/logos/logo_techno/nodejs-expressjs.webp" alt="Logo Node.js"></li>
+                    <!-- Ajoutez d'autres logos de frameworks ici -->
+                </ul>
+            </div>
+
+            <div class="main-sidebar-logo">
+                <h3>Outils</h3>
+                <ul>
+                    <li><img src="assets/logos/logo_tools/Jira-Emblem.png" alt="Logo Jira"></li>
+                    <li><img src="assets/logos/logo_tools/Trello-Emblem.png" alt="Logo Trello"></li>
+                    <li><img src="assets/logos/logo_tools/Notion_App_Logo.webp" alt="Logo Notion"></li>
+                    <li><img src="assets/logos/logo_tools/postman-logo.png" alt="Logo Postman"></li>
+                    <!-- Ajoutez d'autres logos de logiciels ici -->
+                </ul>
+            </div>
+            <div class="main-sidebar-logo">
+                <h3>Design</h3>
+                <ul>
+                    <li><img src="assets/logos/logo_design/figma-logo.webp" alt="Logo Figma"></li>
+                    <li><img src="assets/logos/logo_design/Adobe_Photoshop_Logo_old.webp" alt="Logo Photoshop"></li>
+                    <li><img src="assets/logos/logo_design/lightroom-logo-0.webp" alt="Logo Ligthroom"></li>
+                    <li><img src="assets/logos/logo_design/inkscape-logo-1.webp" alt="Logo Inkscape"></li>
+                    <li><img src="assets/logos/logo_design/solidworks.webp" alt="Logo Solidworks"></li>
+                    <!-- Ajoutez d'autres logos de logiciels ici -->
+                </ul>
+            </div>
+            <div class="main-sidebar-langues">
+                <h2>Langues</h2>
+                <p>Français: maternelle</p>
+                <p>Anglais: technique</p>
+            </div>
+            <div class="main-sidebar-ref">
+                <h2>References</h2>
+                <a href="#github">Github</a>
+                <a href="#linkedin">LinkedIn</a>
+            </div>
+            <div class="main-sidebar-divers">
+                <h2>Divers</h2>
+                <p>Assemblage de PC et réseaux</p>
+                <p>Production agricole</p>
+                <p>Photographie</p>
             </div>
         </section>
-        <section class="services">
-            <div>
-                <h2>services</h2>
+
+        <div class="grid-item col2">
+        </div>
+
+        <section class="corps grid-item col3">
+            <div class="corps-learning">
+                <h2>Formations & Diplomes</h2>
+            </div>
+            <div class="corps-exp">
+                <h2>Experience Professionnelles</h2>
             </div>
         </section>
-        <section class="realisation">
-            <div>
-                <h2>realisation</h2>
-            </div>
-            <div>
-                <h3>Logo clients défile vers la gauche</h3>
-            </div>
-        </section>
+
     </main>
     <footer class="footer">
-        <div class="footer-reseaux">
-            <img class="footer-reseaux-logo facebook" src="./assets/logos/logo_reseau/facebook_logos.png"
-                alt="Logo Facebook">
-            <img class="footer-reseaux-logo linkedin" src="./assets/logos/logo_reseau/linkedIn-logo.png"
-                alt="Logo Linked-In">
-            <img class="footer-reseaux-logo github" src="./assets/logos/logo_reseau/github-logo.png" alt="Logo Github">
-        </div>
+
         <img class="footer-logo" src="./assets/logos/Logo_Mesen/Logo_M 150x150.png" alt="Erik Mesen">
         <div class="footer-legal">
             <a href="#">Contact</a>
