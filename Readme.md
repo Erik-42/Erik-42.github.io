@@ -27,7 +27,7 @@ You can click the Preview link to take a look at your changes.
 <div align="center">
   <h1>Work</h1>
   <a href="https://github.com/Erik-42">
-    <img src="./assets/images/giphy.gif" alt="Work In Progress" width="400" height="100">
+    <img src="./src/assets/images/wip/giphy.gif" alt="Work In Progress" width="400" height="100">
   </a>
 </div>
 
