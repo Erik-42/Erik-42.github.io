@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+    .content-auto {
+      content-visibility: auto;
+    }
+  }
+
 @font-face {
     font-family: "ORCHIDEEL";
     src: url("./fonts/ORCHL.TTF");
