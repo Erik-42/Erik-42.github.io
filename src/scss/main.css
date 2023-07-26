@@ -40,8 +40,8 @@
 } */
 
 .main{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+    /* display: grid;
+    grid-template-columns: 1fr 2fr; */
     /* gap: 20px; */
 }
 
@@ -50,14 +50,14 @@
 } */
   
 .main-sidebarCol1 {
-  grid-column: 1 / 2;
-    color: white;
+  /* grid-column: 1 / 2; */
+    /* color: white; */
     /* position: absolute; */
     /* z-index: -1; */
-    max-width: 530px;
+    /* max-width: 530px; */
     height: 100%;
-    background-color: #1c1917;
-    padding: 20px;
+    /* background-color: #1c1917; */
+    /* padding: 20px; */
 }
 
 /* .main-header-cadre {

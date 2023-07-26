@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+/* npx tailwindcss -i ./src/scss/input.css -o ./src/scss/output.css --watch */
+
 @layer utilities {
     .content-auto {
       content-visibility: auto;
@@ -15,5 +17,5 @@
 
 @font-face {
     font-family: "ORCHIDEEM";
-    src: url("./fonts/ORCHM.TTF");
+    src: url("../../public/fonts/ORCHM.TTF");
 };

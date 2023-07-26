@@ -7,22 +7,22 @@ module.exports = {
     },
     darkmode: false,
     content: ["./**/*.{html,js}"],
-    extend: {
-        fontFamily: {
-            orchideel: ["ORCHIDEEL", "cursive"],
-            orchideem: ["ORCHIDEEM", "cursive"],
-            sans: [
-                'Lato',
-                ...defaultTheme.fontFamily.sans,
-            ],
-        },
-        colors: {
-            'orange-pastel': '#FF912C',
-            'marron-pastel': '#23201E'
-        }
-    },
-    theme: {
 
+    theme: {
+        extend: {
+            fontFamily: {
+                sans: [
+                    'Lato',
+                    ...defaultTheme.fontFamily.sans,
+                ],
+                orchideel: ['ORCHIDEEL', "cursive"],
+                orchideem: ['ORCHIDEEM', "cursive"],
+            },
+            colors: {
+                'orange-pastel': '#FF912C',
+                'marron-pastel': '#23201E'
+            }
+        },
     },
     variants: {
         extend: {},

@@ -7,7 +7,7 @@
     <meta name="theme-color" content="#000000" />
     <meta name="description" content="Portfolio Erik Mesen" />
     <link rel="icon" href="./src/assets/logos/Logo_Mesen/Logo_M.ico" />
-    <link rel="stylesheet" href="./src/scss/main.css">
+    <!-- <link rel="stylesheet" href="./src/scss/main.css"> -->
     <link rel="stylesheet" href="./src/scss/input.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
@@ -27,7 +27,7 @@
             class="bg-white mx-auto flex max-w-5xl items-center content-center justify-between md:justify-end p-6 md:bg-transparent">
             <a href="#top" class="flex items-center justify-around contents md:hidden"
                 aria-label="Page d'accueil du portfolio">
-                <img src="./src/assets/logos/Logo_Mesen/Logo_M_150x150.webp" class="w-10 h-10 md:mr-4 md:inline md:w-7"
+                <img class="w-10 h-10 md:mr-4 md:inline md:w-7" src="./src/assets/logos/Logo_Mesen/Logo_M_150x150.webp"
                     alt="" />
                 <span aria-hidden="true" class="font-orchideem text-lg lg:text-xl text-center bg-white"><strong
                         class="text-amber-600 bg-.">E</strong>rik <strong
@@ -59,21 +59,22 @@
             </ul>
         </nav>
         <div id="photoCoord"
-            class="absolute left-0 top-full -translate-y-full -z-10 md:z-50 md:translate-y-20 md:-translate-x-10 md:top-0 md:flex md:items-baseline md:justify-start md:ml-3 md:fixed  main-header-cadre">
+            class="absolute left-0 top-full -translate-y-full -z-10 md:z-50 md:translate-y-10 md:-translate-x-10 md:top-0 md:flex md:items-baseline md:justify-start md:ml-3 md:fixed">
             <div id="cadrePhoto"
-                class="w-52 h-52 relative border-8 border-amber-600 border-solid rounded-full top-10 left-10 main-header-cadre-circlePhoto">
+                class="w-44 h-44 relative overflow-hidden border-8 border-amber-600 border-solid rounded-full top-10 left-10 main-header-cadre-circlePhoto">
                 <img class="object-cover w-full h-full hover:scale-125 ease-in-out duration-300"
                     src="./src/assets/images/photos/Photo-Mesen.jpg" alt="Erik Mesen">
             </div>
             <div id="cadreCoord"
-                class="bg-amber-600 w-72 h-72 top-20 left-10 rounded-full flex flex-col items-center justify-center text-center main-header-cadre-coord">
-                <H1 id="titre" class="main-header-cadre-coord-titre text-2xl font-o text-black">Erik<br>Mesen</H1>
+                class="bg-amber-600 w-52 h-52 top-20 left-10 rounded-full flex flex-col items-center justify-center text-center main-header-cadre-coord">
+                <H1 id="titre" class="main-header-cadre-coord-titre text-2xl font-orchideel text-black">Erik<br>Mesen
+                </H1>
                 <!-- <p>7, rue des ruisseaux</p> -->
                 <!-- <p>Ger, 50850</p> -->
-                <p>France</p>
-                <h3 class="text-lg">+33 7 68 25 25 09</h3>
+                <p>Developpeur web</p>
+                <!-- <h3 class="text-lg">+33 7 68 25 25 09</h3> -->
                 <h3>
-                    <a href="mailto:erik.mesen@basillecorp.dev" target="_blank">erik.mesen@basillecorp.dev</a>
+                    <!-- <a href="mailto:erik.mesen@basillecorp.dev" target="_blank">erik.mesen@basillecorp.dev</a> -->
                 </h3>
             </div>
         </div>
@@ -97,124 +98,138 @@
         </div>
     </header>
 
-    <main class="main">
-
-
-        <div class="absolute flex items-start flex-col ml-96 mt-20 header-quali">
+    <main id="main" class="flex">
+        <div id="bio" class="hidden md:absolute md:flex md:items-start md:flex-col md:ml-96 md:mt-20">
             <p>Créatif, Autonome, Curieux</p>
             <p class="ml-10">Esprit d'analyse</p>
             <p class="ml-20">Esprit d'équipe</p>
             <p class="ml-32">Force de proposition</p>
             <p class="ml-36">Capacités d'adaptation</p>
+            <p class="ml-36 max-w-md h-4">Développeur web junior, je suis dynamique et j’aime travailler en équipe
+                pour
+                relever des challenges techniques.<br>J’ai une bonne maîtrise des outils de développement et je suis en
+                constante recherche d’apprentissage.</p>
         </div>
-        <div class="absolute flex items-start flex-col ml-96 translate-x-36 mt-52 mb-5 mr-40 header-about">
-            <p>Développeur web junior, je suis dynamique et j’aime travailler en équipe pour relever des challenges
-                techniques. J’ai une bonne maîtrise des outils de développement et je suis en constante recherche
-                d’apprentissage.</p>
-        </div>
-        <aside class="w-96 text-white bg-stone-900 p-5 h-full  main-sidebarCol1">
-
-            <div class="bg-stone-900 w-80 h-full">
-                <div class="main-sidebarCol1-competences">
-                    <h2 class="mt-4 text-xl font-medium">Compétences</h2>
-                    <div class="main-sidebarCol1-logo">
-                        <h3 class="mt-4 text-lg font-medium">Langages</h3>
-                        <ul>
-                            <li><img src="./src/assets/logos/logo_techno/logo-html-5-2048.png" alt="Logo HTML 5"></li>
-                            <li><img src="./src/assets/logos/logo_techno/css3.webp" alt="Logo CSS 3"></li>
-                            <li><img src="./src/assets/logos/logo_techno/javascript-icon-png-23.jpg"
-                                    alt="Logo JavaScript">
-                            </li>
-                            <li><img src="./src/assets/logos/logo_techno/LogoSCSS.webp" alt="Logo SCSS"></li>
-                            <li><img src="./src/assets/logos/logo_techno/php-logo-png-transparent-svg-vector-bie-supply-1.webp"
-                                    alt="Logo PHP"></li>
-                            <li><img src="./src/assets/logos/logo_divers/apache-logo-300x300.webp" alt="Logo Apache">
-                            </li>
-                            <li><img src="./src/assets/logos/logo_divers/mongodb.webp" alt="Logo MongoDB"></li>
-                        </ul>
-                    </div>
-                    <div class="main-sidebarCol1-logo">
-                        <h3 class="mt-4 text-lg font-medium">Frameworks</h3>
-                        <ul>
-                            <li><img src="./src/assets/logos/logo_techno/react-1-logo-svg-vector.webp" alt="Logo React">
-                            </li>
-                            <li><img src="./src/assets/logos/logo_techno/nodejs-expressjs.webp" alt="Logo Node.js"></li>
-                        </ul>
-                    </div>
-                    <div class="main-sidebarCol1-logo">
-                        <h3 class="mt-4 text-lg font-medium">Outils</h3>
-                        <ul>
-                            <li><img src="./src/assets/logos/logo_divers/joomla-logo-1.webp" alt="Logo Joomla"></li>
-                            <li><img src="./src/assets/logos/logo_divers/wordpress_PNG74.png" alt="Logo Wordpress"></li>
-                            <li><img src="./src/assets/logos/logo_tools/Jira-Emblem.png" alt="Logo Jira"></li>
-                            <li><img src="./src/assets/logos/logo_tools/Trello-Emblem.png" alt="Logo Trello"></li>
-                            <li><img src="./src/assets/logos/logo_tools/Notion_App_Logo.webp" alt="Logo Notion"></li>
-                            <li><img src="./src/assets/logos/logo_reseau/github-logo.png" alt="Logo Github"></li>
-                            <li><img src="./src/assets/logos/logo_tools/postman-logo.png" alt="Logo Postman"></li>
-                        </ul>
-                    </div>
-                    <div class="main-sidebarCol1-logo">
-                        <h3 class="mt-4 text-lg font-medium">Design</h3>
-                        <ul>
-                            <li><img src="./src/assets/logos/logo_design/lightroom-logo-0.webp" alt="Logo Ligthroom">
-                            </li>
-                            <li><img src="./src/assets/logos/logo_design/photoshop.webp" alt="Logo Photoshop"></li>
-                            <li><img src="./src/assets/logos/logo_design/inkscape-logo-1.webp" alt="Logo Inkscape"></li>
-                            <li><img src="./src/assets/logos/logo_design/figma-logo.webp" alt="Logo Figma"></li>
-                            <li><img src="./src/assets/logos/logo_design/solidworks.webp" alt="Logo Solidworks"></li>
-                        </ul>
-                    </div>
+        <aside id="aside"
+            class="p-5 w-1/3 text-center flex flex-col bg-slate-200 text-gray-950  md:text-white md:bg-stone-900">
+            <div id="containerTechno" class="mt-14 md:mt-60">
+                <h2 id="competences" class="mt-4 text-xl font-bold">Compétences</h2>
+                <div id="containerLanguages" class="">
+                    <h3 id="languages" class="mt-4 text-lg font-medium">Langages</h3>
+                    <ul class="flex justify-around items-center content-center flex-wrap">
+                        <li class="w-1/4"><img src="./src/assets/logos/logo_techno/logo-html-5-2048.png"
+                                alt="Logo HTML 5"></li>
+                        <li class="w-1/4"><img src="./src/assets/logos/logo_techno/css3.webp" alt="Logo CSS 3"></li>
+                        <li class="w-1/4"><img src="./src/assets/logos/logo_techno/javascript-icon-png-23.jpg"
+                                alt="Logo JavaScript">
+                        </li>
+                        <li class="w-1/4"><img src="./src/assets/logos/logo_techno/LogoSCSS.webp" alt="Logo SCSS"></li>
+                        <li class="w-1/4"><img
+                                src="./src/assets/logos/logo_techno/php-logo-png-transparent-svg-vector-bie-supply-1.webp"
+                                alt="Logo PHP"></li>
+                        <li class="w-1/4"><img src="./src/assets/logos/logo_divers/apache-logo-300x300.webp"
+                                alt="Logo Apache">
+                        </li>
+                        <li class="w-1/4"><img src="./src/assets/logos/logo_divers/mongodb.webp" alt="Logo MongoDB">
+                        </li>
+                    </ul>
+                </div>
+                <div id="containerFrameworks" class="">
+                    <h3 class="mt-4 text-lg font-medium">Frameworks</h3>
+                    <ul class="flex justify-around items-center content-center flex-wrap">
+                        <li class="w-1/4"><img src="./src/assets/logos/logo_techno/react-1-logo-svg-vector.webp"
+                                alt="Logo React">
+                        </li>
+                        <li class="w-1/4"><img src="./src/assets/logos/logo_techno/nodejs-expressjs.webp"
+                                alt="Logo Node.js"></li>
+                        <li class="w-1/4"><img src="./src/assets/logos/logo_techno/tailwindcss-1.png"
+                                alt="Logo Tailwindcss"></li>
+                    </ul>
+                </div>
+                <div id="containerTools" class="">
+                    <h3 class="mt-4 text-lg font-medium">Outils</h3>
+                    <ul class="flex justify-around items-center content-center flex-wrap">
+                        <li class="w-1/4"><img src="./src/assets/logos/logo_divers/joomla-logo-1.webp"
+                                alt="Logo Joomla"></li>
+                        <li class="w-1/4"><img src="./src/assets/logos/logo_divers/wordpress_PNG74.png"
+                                alt="Logo Wordpress"></li>
+                        <li class="w-1/4"><img src="./src/assets/logos/logo_tools/Jira-Emblem.png" alt="Logo Jira"></li>
+                        <li class="w-1/4"><img src="./src/assets/logos/logo_tools/Trello-Emblem.png" alt="Logo Trello">
+                        </li>
+                        <li class="w-1/4"><img src="./src/assets/logos/logo_tools/Notion_App_Logo.webp"
+                                alt="Logo Notion"></li>
+                        <li class="w-1/4"><img src="./src/assets/logos/logo_reseau/github-logo.png" alt="Logo Github">
+                        </li>
+                        <li class="w-1/4"><img src="./src/assets/logos/logo_tools/postman-logo.png" alt="Logo Postman">
+                        </li>
+                    </ul>
+                </div>
+                <div id="containerDesign" class="">
+                    <h3 class=" mt-4 text-lg font-medium">Design</h3>
+                    <ul class="flex justify-around items-center content-center flex-wrap">
+                        <li class="w-1/4"><img src="./src/assets/logos/logo_design/lightroom-logo-0.webp"
+                                alt="Logo Ligthroom">
+                        </li>
+                        <li class="w-1/4"><img src="./src/assets/logos/logo_design/photoshop.webp" alt="Logo Photoshop">
+                        </li>
+                        <li class="w-1/4"><img src="./src/assets/logos/logo_design/inkscape-logo-1.webp"
+                                alt="Logo Inkscape"></li>
+                        <li class="w-1/4"><img src="./src/assets/logos/logo_design/figma-logo.webp" alt="Logo Figma">
+                        </li>
+                        <li class="w-1/4"><img src="./src/assets/logos/logo_design/solidworks.webp"
+                                alt="Logo Solidworks"></li>
+                    </ul>
                 </div>
             </div>
-            <div class="main-sidebarCol1-ref">
+            <div id="references" class="main-sidebarCol1-ref">
                 <h2 class="mt-4 text-xl font-medium">References</h2>
                 <p><a href="https://basillecorp.dev/">Portfolio: basillecorp.dev</a></p>
                 <p><a href="https://github.com/Erik-42">Github: Erik-42</a></p>
                 <p><a href="https://www.linkedin.com/in/erik-mesen/">LinkedIn: erik-mesen</a></p>
             </div>
-            <div class="main-sidebarCol1-divers">
+            <div id="softSkills" class="main-sidebarCol1-divers">
                 <h2 class="mt-4 text-xl font-medium">Soft Skills</h2>
                 <p>Gestion de projets</p>
                 <p>Veille technologique</p>
                 <p>Travail d'équipe</p>
                 <p>Design créatif</p>
             </div>
-            <div class="main-sidebarCol1-langues">
+            <div id="langues" class="main-sidebarCol1-langues">
                 <h2 class="mt-4 text-xl font-medium">Langues</h2>
                 <p>Français: maternelle</p>
                 <p>Anglais: technique</p>
             </div>
-            <div class="main-sidebarCol1-divers">
-                <h2 class="mt-4 text-white text-xl font-medium">Divers</h2>
+            <div id="divers" class="main-sidebarCol1-divers">
+                <h2 class="mt-4 text-xl font-medium">Divers</h2>
                 <p>Assemblage de PC et réseaux</p>
                 <p>Production agricole</p>
                 <p>Photographie</p>
             </div>
         </aside>
 
-        <section class="mt-72 corpsCol2 grid-item">
-            <h2 id="projets" class="bg-gray-600 text-center mt-4 text-xl font-medium">Projets</h2>
-            <div class="containerProjet m-10 flex flex-row flex-nowrap">
-
-                <div id="projet1"
-                    class="containerProjet1 bg-amber-600 mx-2 w-full md:w-1/3 border-2 border-gray-900 shadow-lg rounded-lg">
+        <section class="mt-72">
+            <h2 id="projets" class=" text-center mt-4 text-xl font-medium">Projets</h2>
+            <div id="containerProjets" class="m-10 flex">
+                <div id="containerProjet1"
+                    class=" bg-amber-600 max-h-44 max-w-full md:mx-2 md:w-full md:w-1/3 border-2 border-gray-900 shadow-lg rounded-lg">
                     <a href="https://github.com/Erik-42/openclassrooms_projet_7" target="_blank">
                         <img class="rounded-t-lg w-full h-40 object-cover"
                             src="./src/assets/images/screenshot/React-App8.png" alt="Projet 1">
                     </a>
                     <div class="p-5">
                         <a href="https://github.com/Erik-42/openclassrooms_projet_7" target="_blank">
-                            <h4 class="mb-1 text-2xl text-gray-700">Mon Vieux Grimoire</h4>
+                            <h4 class="md:mb-1 md:text-2xl text-gray-700">Mon Vieux Grimoire</h4>
                         </a>
-                        <p class="mb-2 text-gray-900">Développez le back-end d'un site de notation de livres au nom
+                        <p class="hidden md:inline-flex md:mb-2 md:text-gray-900">Développez le back-end d'un site de
+                            notation de livres au nom
                             d'une chaîne de librairies “Le Vieux Grimoire”</p>
-                        <a class="inline-flex items-center py-2 px-3 bg-gray-800 text-white rounded-lg text-sm hover:bg-gray-600"
+                        <a class="hidden md:inline-flex md:items-center md:py-2 md:px-3 md:bg-gray-800 md:text-white md:rounded-lg md:text-sm md:hover:bg-gray-600"
                             href="https://github.com/Erik-42/openclassrooms_projet_7">En
                             savoir plus</a>
                     </div>
                 </div>
-                <div id="projet2"
-                    class="containerProjet2 bg-amber-600 mx-2 w-full md:w-1/3 border-2 border-gray-900 shadow-lg rounded-lg">
+                <div id="containerProjet2"
+                    class="bg-amber-600 md:mx-2 md:w-full md:w-1/3 border-2 border-gray-900 shadow-lg rounded-lg">
                     <a href="https://github.com/Erik-42/openclassrooms_projet_6" target="_blank">
                         <img class="rounded-t-lg w-full h-40 object-cover"
                             src="./src/assets/images/screenshot/Kasa-mini.png" alt="Projet 2">
@@ -230,8 +245,8 @@
                             savoir plus</a>
                     </div>
                 </div>
-                <div id="projet3"
-                    class="containerProjet3 bg-amber-600 mx-2 w-full md:w-1/3 border-2 border-gray-900 shadow-lg rounded-lg">
+                <div id="containerProjet3"
+                    class="bg-amber-600 md:mx-2 md:w-full md:w-1/3 border-2 border-gray-900 shadow-lg rounded-lg">
                     <a href="https://cidreetdragon.eu" target="_blank">
                         <img class="rounded-t-lg w-full h-40 object-cover" src="./src/assets/images/screenshot/CetD.png"
                             alt="Projet 3">
@@ -278,7 +293,7 @@
             </ul>
 
 
-            <h2 class="bg-gray-600 text-center mt-4 text-xl font-medium">Experience Professionnelles</h2>
+            <!-- <h2 class="bg-gray-600 text-center mt-4 text-xl font-medium">Experience Professionnelles</h2>
 
             <div class="relative flex flex-col mt-12 w-2 h-full corpsCol2-expProContainer">
                 <div class="corpsCol2-expProContainer-arrowContainer">
@@ -459,17 +474,10 @@
             </div>
             </div>
             </div>
-            </div>
+            </div> -->
         </section>
 
     </main>
-    <!-- <footer class="footer">
-        <img class="footer-logo" src="./assets/logos/Logo_Mesen/Logo_M_150x150.webp" alt="Logo Erik Mesen">
-        <div class="footer-legal">
-            <a href="mailto:mesen.erik@gmail.com">Contact</a>
-            <a href="#">Mentions Légales</a>
-        </div>
-    </footer> -->
     <script src="./src/JS/script.js"></script>
 </body>
 
