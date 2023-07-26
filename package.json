@@ -1,0 +1,30 @@
+{
+  "name": "test_projet",
+  "version": "1.0.0",
+  "description": "Test de tailwincss",
+  "main": "/src/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Erik-42",
+  "license": "ISC",
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.4",
+    "@tailwindcss/typography": "^0.5.9",
+    "tailwindcss": "^3.3.3"
+  },
+  "dependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "autoprefixer": "^10.4.14",
+    "children": "^0.2.3",
+    "cross-env": "^7.0.3",
+    "postcss": "^8.4.27",
+    "postcss-cli": "^10.1.0",
+    "postcss-import": "^15.1.0"
+  },
+  "script": {
+    "build": "tailwind build ./src/scss/input.css -o ./src/scss/output.css",
+    "dev": "npm run build --watch",
+    "production": "cross-env NODE_ENV=production postcss input.css -o output.css"
+  }
+}

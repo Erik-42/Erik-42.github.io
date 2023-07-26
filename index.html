@@ -6,8 +6,18 @@
     <title>Portfolio Erik Mesen</title>
     <meta name="theme-color" content="#000000" />
     <meta name="description" content="Portfolio Erik Mesen" />
-    <link rel="icon" href="./assets/logos/Logo_Mesen/Logo_M.ico" />
-    <link rel="stylesheet" href="./scss/main.css">
+    <link rel="icon" href="./src/assets/logos/Logo_Mesen/Logo_M.ico" />
+    <link rel="stylesheet" href="./src/scss/main.css">
+    <link rel="stylesheet" href="./src/scss/input.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
@@ -19,135 +29,444 @@
     <script type="module" src="./js/main.js"></script> -->
 </head>
 
-<body>
-    <header class="header">
-        <div class="header-cadre">
-            <div class="header-cadre-circlePhoto">
-                <img src="./assets/images/photos/Photo-Mesen.jpg" alt="Erik Mesen">
+<body id="top">
+    <header id="header" class="z-50 fixed top-0 w-full md:shadow">
+
+        <nav id="nav-bar" class="max-w-5xl mx-auto font-orchideem p-6 flex items-center justify-between">
+
+            <a href="#top" class="flex md:hidden" aria-label="Page d'accueil du portfolio">
+                <img src="./src/assets/logos/Logo_Mesen/Logo_M_150x150.webp" class=" md:w-7 md:inline md:mr-4" alt="">
+                <span aria-hidden="true" class="text-lg lg:text-xl"><strong class="text-amber-600">E</strong>rik <strong
+                        class="text-amber-600">M</strong>esen</span>
+            </a>
+
+            <button id="menu-btn" aria-label="toggled button" aria-expanded="false"
+                class="cursor-pointer w-7 md:hidden">
+                <img src="./src/assets/logos/logo_menu/menu.svg" alt="">
+            </button>
+
+            <ul id="toggled-menu"
+                class="w-full absolute top-full left-0 -translate-y-full -z-10  text-gray-800 border-b border-gray-200 flex flex-col items-center md:static md:z-10 md:w-min md:transform-none md:border-none md:flex-row">
+                <li class="py-4 md:py-0 md:mr-6">
+                    <a href="#cv" class="text-sm uppercase font-semibold w-full hover:text-amber-600">CV</a>
+                </li>
+                <li class="py-4 md:py-0 md:mr-6">
+                    <a href="#formations"
+                        class="text-sm uppercase font-semibold w-full hover:text-amber-600">Formations</a>
+                </li>
+                <li class="py-4 md:py-0 md:mr-6">
+                    <a href="#projets" class="text-sm uppercase font-semibold w-full hover:text-amber-600">Projets</a>
+                </li>
+                <li class="py-4 md:py-0 md:mr-6">
+                    <a href="#contacts" class="text-sm uppercase font-semibold w-full hover:text-amber-600">Contacts</a>
+                </li>
+            </ul>
+        </nav>
+        <div id="photoCoord" class="flex items-baseline justify-start ml-3 z-50 fixed top-0 main-header-cadre">
+            <div id="cadrePhoto"
+                class="w-52 h-52 relative border-8 border-amber-600 border-solid rounded-full top-10 left-10 main-header-cadre-circlePhoto">
+                <img class="object-cover w-full h-full hover:scale-125 transform-0.5"
+                    src="./src/assets/images/photos/Photo-Mesen.jpg" alt="Erik Mesen">
             </div>
-            <div class="header-cadre-coord">
-                <H1 class="header-titre">Erik Mesen</H1>
+            <div id="cadreCoord"
+                class="bg-amber-600 w-72 h-72 top-20 left-16 rounded-full flex flex-col items-center justify-center text-center main-header-cadre-coord">
+                <H1 class="main-header-cadre-coord-titre text-2xl font-o text-black">Erik<br>Mesen</H1>
                 <!-- <p>7, rue des ruisseaux</p> -->
                 <!-- <p>Ger, 50850</p> -->
                 <p>France</p>
-                <h3>+33 7 68 25 25 09</h3>
+                <h3 class="text-lg">+33 7 68 25 25 09</h3>
                 <h3>erik.mesen@basillecorp.dev</h3>
             </div>
-        </div>
-        <div class="header-quali">
-            <p>Créatif, Autonome, Curieux</p>
-            <p>Esprit d'analyse</p>
-            <p>Esprit d'équipe</p>
-            <p>Force de proposition</p>
-            <p>Capacités d'adaptation</p>
-        </div>
-        <div class="header-about">
-            <p>Développeur web junior, je suis dynamique et j’aime travailler en équipe pour relever des challenges
-                techniques. J’ai une bonne maîtrise des outils de développement et je suis en constante recherche
-                d’apprentissage.</p>
-        </div>
-        <nav class="header-nav-bar">
-            <a class="header-nav-bar-accueil" href="#">Accueil</a>
-            <a class="header-nav-bar-about" href="#">About</a>
-            <a class="header-nav-bar-services" href="#">Services</a>
-            <a class="header-nav-bar-realisations" href="#">Réalisations</a>
-        </nav>
-        <div class="header-reseaux">
-            <a href="#linkedin" class="header-reseaux-logo linkedin">
-                <img src="./assets/logos/logo_reseau/linkedIn-logo.png" alt="Logo Linked-In">
-            </a>
-            <a href="#github" class="header-reseaux-logo github">
-                <img src="./assets/logos/logo_reseau/github-logo.png" alt="Logo Github">
-            </a>
-            <a href="#modalContact" class="contact">Contact</a>
         </div>
     </header>
 
     <main class="main">
-        <!-- <div class="grid-item col1"></div> -->
-        <section class="main-sidebar grid-item col1">
-            <h2>Compétences</h2>
-            <div class="main-sidebar-logo">
-                <h3>Langages</h3>
-                <ul>
-                    <li><img src="./assets/logos/logo_techno/logo-html-5-2048.png" alt="Logo HTML 5"></li>
-                    <li><img src="./assets/logos/logo_techno/css3.webp" alt="Logo CSS 3"></li>
-                    <li><img src="./assets/logos/logo_techno/javascript-icon-png-23.jpg" alt="Logo JavaScript"></li>
-                    <li><img src="./assets/logos/logo_techno/php-logo-png-transparent-svg-vector-bie-supply-1.webp"
-                            alt="Logo PHP"></li>
-                    <!-- Ajoutez d'autres logos de frameworks ici -->
-                </ul>
-            </div>
-            <div class="main-sidebar-logo">
-                <h3>Frameworks</h3>
-                <ul>
-                    <li><img src="./assets/logos/logo_techno/React_logo_logotype_emblem.webp" alt="Logo React"></li>
-                    <li><img src="./assets/logos/logo_techno/sass_icon-512.webp" alt="Logo SCSS"></li>
-                    <li><img src="./assets/logos/logo_techno/nodejs-expressjs.webp" alt="Logo Node.js"></li>
-                    <!-- Ajoutez d'autres logos de frameworks ici -->
-                </ul>
-            </div>
+        <div id="reseaux" class="fixed flex items-center justify-end mt-12 mr-20 w-full h-1/5">
+            <a href="https://www.linkedin.com/in/erik-mesen/" class="object-cover m-2 w-10 h-10">
+                <img class="header-reseaux-linkedinLogo" src="./src/assets/logos/logo_reseau/linkedIn-logo.png"
+                    alt="Logo Linked-In">
+            </a>
+            <a href="https://github.com/Erik-42" class="object-cover m-2 w-10 h-10">
+                <img class="header-reseaux-githubLogo" src="./src/assets/logos/logo_reseau/github-logo.png"
+                    alt="Logo Github">
+            </a>
+            <a href="mailto:mesen.erik@gmail.com" class="mr-10 object-cover m-2 w-10 h-10">
+                <img class="header-reseaux-contact" src="./src/assets/logos/logo_divers/purple-mail.webp"
+                    alt="Logo contact">
+            </a>
+        </div>
 
-            <div class="main-sidebar-logo">
-                <h3>Outils</h3>
-                <ul>
-                    <li><img src="assets/logos/logo_tools/Jira-Emblem.png" alt="Logo Jira"></li>
-                    <li><img src="assets/logos/logo_tools/Trello-Emblem.png" alt="Logo Trello"></li>
-                    <li><img src="assets/logos/logo_tools/Notion_App_Logo.webp" alt="Logo Notion"></li>
-                    <li><img src="assets/logos/logo_tools/postman-logo.png" alt="Logo Postman"></li>
-                    <!-- Ajoutez d'autres logos de logiciels ici -->
-                </ul>
+        <div class="absolute flex items-start flex-col ml-96 mt-20 header-quali">
+            <p>Créatif, Autonome, Curieux</p>
+            <p class="ml-10">Esprit d'analyse</p>
+            <p class="ml-20">Esprit d'équipe</p>
+            <p class="ml-32">Force de proposition</p>
+            <p class="ml-36">Capacités d'adaptation</p>
+        </div>
+        <div class="absolute flex items-end mt-24 ml-110 h-2/6 header-about">
+            <p>Développeur web junior, je suis dynamique et j’aime travailler en équipe pour relever des challenges
+                techniques. J’ai une bonne maîtrise des outils de développement et je suis en constante recherche
+                d’apprentissage.</p>
+        </div>
+        <aside class="w-96 text-white bg-stone-900 p-5 h-full  main-sidebarCol1">
+
+            <div class="bg-stone-900 w-80 h-full">
+                <div class="main-sidebarCol1-competences">
+                    <h2 class="mt-4 text-xl font-medium">Compétences</h2>
+                    <div class="main-sidebarCol1-logo">
+                        <h3 class="mt-4 text-lg font-medium">Langages</h3>
+                        <ul>
+                            <li><img src="./src/assets/logos/logo_techno/logo-html-5-2048.png" alt="Logo HTML 5"></li>
+                            <li><img src="./src/assets/logos/logo_techno/css3.webp" alt="Logo CSS 3"></li>
+                            <li><img src="./src/assets/logos/logo_techno/javascript-icon-png-23.jpg"
+                                    alt="Logo JavaScript">
+                            </li>
+                            <li><img src="./src/assets/logos/logo_techno/LogoSCSS.webp" alt="Logo SCSS"></li>
+                            <li><img src="./src/assets/logos/logo_techno/php-logo-png-transparent-svg-vector-bie-supply-1.webp"
+                                    alt="Logo PHP"></li>
+                            <li><img src="./src/assets/logos/logo_divers/apache-logo-300x300.webp" alt="Logo Apache">
+                            </li>
+                            <li><img src="./src/assets/logos/logo_divers/mongodb.webp" alt="Logo MongoDB"></li>
+                        </ul>
+                    </div>
+                    <div class="main-sidebarCol1-logo">
+                        <h3 class="mt-4 text-lg font-medium">Frameworks</h3>
+                        <ul>
+                            <li><img src="./src/assets/logos/logo_techno/react-1-logo-svg-vector.webp" alt="Logo React">
+                            </li>
+                            <li><img src="./src/assets/logos/logo_techno/nodejs-expressjs.webp" alt="Logo Node.js"></li>
+                        </ul>
+                    </div>
+                    <div class="main-sidebarCol1-logo">
+                        <h3 class="mt-4 text-lg font-medium">Outils</h3>
+                        <ul>
+                            <li><img src="./src/assets/logos/logo_divers/joomla-logo-1.webp" alt="Logo Joomla"></li>
+                            <li><img src="./src/assets/logos/logo_divers/wordpress_PNG74.png" alt="Logo Wordpress"></li>
+                            <li><img src="./src/assets/logos/logo_tools/Jira-Emblem.png" alt="Logo Jira"></li>
+                            <li><img src="./src/assets/logos/logo_tools/Trello-Emblem.png" alt="Logo Trello"></li>
+                            <li><img src="./src/assets/logos/logo_tools/Notion_App_Logo.webp" alt="Logo Notion"></li>
+                            <li><img src="./src/assets/logos/logo_reseau/github-logo.png" alt="Logo Github"></li>
+                            <li><img src="./src/assets/logos/logo_tools/postman-logo.png" alt="Logo Postman"></li>
+                        </ul>
+                    </div>
+                    <div class="main-sidebarCol1-logo">
+                        <h3 class="mt-4 text-lg font-medium">Design</h3>
+                        <ul>
+                            <li><img src="./src/assets/logos/logo_design/lightroom-logo-0.webp" alt="Logo Ligthroom">
+                            </li>
+                            <li><img src="./src/assets/logos/logo_design/photoshop.webp" alt="Logo Photoshop"></li>
+                            <li><img src="./src/assets/logos/logo_design/inkscape-logo-1.webp" alt="Logo Inkscape"></li>
+                            <li><img src="./src/assets/logos/logo_design/figma-logo.webp" alt="Logo Figma"></li>
+                            <li><img src="./src/assets/logos/logo_design/solidworks.webp" alt="Logo Solidworks"></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="main-sidebar-logo">
-                <h3>Design</h3>
-                <ul>
-                    <li><img src="assets/logos/logo_design/figma-logo.webp" alt="Logo Figma"></li>
-                    <li><img src="assets/logos/logo_design/Adobe_Photoshop_Logo_old.webp" alt="Logo Photoshop"></li>
-                    <li><img src="assets/logos/logo_design/lightroom-logo-0.webp" alt="Logo Ligthroom"></li>
-                    <li><img src="assets/logos/logo_design/inkscape-logo-1.webp" alt="Logo Inkscape"></li>
-                    <li><img src="assets/logos/logo_design/solidworks.webp" alt="Logo Solidworks"></li>
-                    <!-- Ajoutez d'autres logos de logiciels ici -->
-                </ul>
+            <div class="main-sidebarCol1-ref">
+                <h2 class="mt-4 text-xl font-medium">References</h2>
+                <p><a href="https://basillecorp.dev/">Portfolio: basillecorp.dev</a></p>
+                <p><a href="https://github.com/Erik-42">Github: Erik-42</a></p>
+                <p><a href="https://www.linkedin.com/in/erik-mesen/">LinkedIn: erik-mesen</a></p>
             </div>
-            <div class="main-sidebar-langues">
-                <h2>Langues</h2>
+            <div class="main-sidebarCol1-divers">
+                <h2 class="mt-4 text-xl font-medium">Soft Skills</h2>
+                <p>Gestion de projets</p>
+                <p>Veille technologique</p>
+                <p>Travail d'équipe</p>
+                <p>Design créatif</p>
+            </div>
+            <div class="main-sidebarCol1-langues">
+                <h2 class="mt-4 text-xl font-medium">Langues</h2>
                 <p>Français: maternelle</p>
                 <p>Anglais: technique</p>
             </div>
-            <div class="main-sidebar-ref">
-                <h2>References</h2>
-                <a href="#github">Github</a>
-                <a href="#linkedin">LinkedIn</a>
-            </div>
-            <div class="main-sidebar-divers">
-                <h2>Divers</h2>
+            <div class="main-sidebarCol1-divers">
+                <h2 class="mt-4 text-white text-xl font-medium">Divers</h2>
                 <p>Assemblage de PC et réseaux</p>
                 <p>Production agricole</p>
                 <p>Photographie</p>
             </div>
-        </section>
+        </aside>
 
-        <div class="grid-item col2">
-        </div>
+        <section class="mt-72 corpsCol2 grid-item">
+            <h2 class="bg-gray-600 text-center mt-4 text-xl font-medium">Projets</h2>
+            <div class="containerProjet m-10 flex flex-row flex-nowrap">
 
-        <section class="corps grid-item col3">
-            <div class="corps-learning">
-                <h2>Formations & Diplomes</h2>
+                <div
+                    class="containerProjet1 bg-amber-600 mx-2 w-full md:w-1/3 border-2 border-gray-900 shadow-lg rounded-lg">
+                    <a href="https://github.com/Erik-42/openclassrooms_projet_7">
+                        <img class="rounded-t-lg w-full h-40 object-cover"
+                            src="./src/assets/images/screenshot/React-App8.png" alt="Projet 1">
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h4 class="mb-1 text-2xl text-gray-700">Mon Vieux Grimoire</h4>
+                        </a>
+                        <p class="mb-2 text-gray-900">Développez le back-end d'un site de notation de livres au nom
+                            d'une chaîne de librairies “Le Vieux Grimoire”</p>
+                        <a class="inline-flex items-center py-2 px-3 bg-gray-800 text-white rounded-lg text-sm hover:bg-gray-600"
+                            href="#">En
+                            savoir plus</a>
+                    </div>
+                </div>
+                <div
+                    class="containerProjet2 bg-amber-600 mx-2 w-full md:w-1/3 border-2 border-gray-900 shadow-lg rounded-lg">
+                    <a href="https://github.com/Erik-42/openclassrooms_projet_6">
+                        <img class="rounded-t-lg w-full h-40 object-cover"
+                            src="./src/assets/images/screenshot/Kasa-mini.png" alt="Projet 2">
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h4 class="mb-1 text-2xl text-gray-700">Agence immobilière Kasa</h4>
+                        </a>
+                        <p class="mb-2 text-gray-900">Créez une application web de location immobilière avec React
+                        </p>
+                        <a class="inline-flex items-center py-2 px-3 bg-gray-800 text-white rounded-lg text-sm hover:bg-gray-600"
+                            href="#">En
+                            savoir plus</a>
+                    </div>
+                </div>
+                <div
+                    class="containerProjet3 bg-amber-600 mx-2 w-full md:w-1/3 border-2 border-gray-900 shadow-lg rounded-lg">
+                    <a href="https://github.com/Erik-42/OpenClassRooms_Projet_3">
+                        <img class="rounded-t-lg w-full h-40 object-cover"
+                            src="./src/assets/images/screenshot/Picture 2023-03-02 11_47_05.png" alt="Projet 3">
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h4 class="mb-1 text-2xl text-gray-700">Portfolio architecte Sophie Bluel</h4>
+                        </a>
+                        <p class="mb-2 text-gray-900">Créez une page web dynamique avec JavaScript</p>
+                        <a class="inline-flex items-center py-2 px-3 bg-gray-800 text-white rounded-lg text-sm hover:bg-gray-600"
+                            href="#">En
+                            savoir plus</a>
+                    </div>
+                </div>
             </div>
-            <div class="corps-exp">
-                <h2>Experience Professionnelles</h2>
+            </div>
+            <h2 class="bg-gray-600 text-center mt-4 text-xl font-medium">Formations & Diplômes</h2>
+
+            <ul class="flex flex-col items-start content-center flex-wrap text-left mt-5">
+                <li class="flex">
+                    <h4>2023</h4>
+                    <p> - Formation développeur intégrateur web RNCP NIV 6</p>
+                </li>
+                <li class="flex">
+                    <h4>2009</h4>
+                    <p> - Brevet Professionnel de Responsable d’Exploitation Agricole</p>
+                </li>
+                <li class="flex">
+                    <h4>2008</h4>
+                    <p> - Attestation de capacité de transport routier de marchandises</p>
+                </li>
+                <li class="flex">
+                    <h4>2005</h4>
+                    <p> - DUT Gestion Logistique et transport</p>
+                </li>
+                <li class="flex">
+                    <h4>1999</h4>
+                    <p> - BAC Professionnel Transport et Logistique - Mention AB</p>
+                </li>
+                <li class="flex">
+                    <h4>1990</h4>
+                    <p> - CAP – BEP Mécanicien Véhicules Industriels</p>
+                </li>
+            </ul>
+
+
+            <h2 class="bg-gray-600 text-center mt-4 text-xl font-medium">Experience Professionnelles</h2>
+
+            <div class="relative flex flex-col mt-12 w-2 h-full corpsCol2-expProContainer">
+                <div class="corpsCol2-expProContainer-arrowContainer">
+                    <div class="absolute corpsCol2-expProContainer-arrowContainer-pointe">
+                    </div>
+
+                    <div class="corpsCol2-expProContainer-arrowContainer-line"></div>
+                </div>
+
+                <div class="container flex h-full flex-col">
+                    <div class="container flex w-fit items-center">
+                        <div class="point m-4 h-7 w-9 rounded-full bg-amber-600"></div>
+                        <div class="date flex w-fit flex-col">
+                            <div class="flex flex-row">
+                                <h4 class="m-1 min-w-fit">2014-2023</h4>
+                                <h4 class="m-1 min-w-fit">Festival Cidre & Dragon</h4>
+                                <p class="m-1 min-w-fit">– Merville-Franceville-Plage</p>
+                            </div>
+                            <div class="flex flex-col">
+                                <h5 class="m-1 w-full">Responsable implantations, goodies, hygiène, multimédia, membres
+                                    du conseil d’administration et du bureau.</h5>
+                                <p class="m-1">Création, Préparation et installation du festival, gestion d’équipes
+                                    bénévoles, Préconisation et choix de partenaires, fournisseurs et artistes, création
+                                    du site web.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container flex h-full flex-col">
+                        <div class="container flex w-fit items-center">
+                            <div class="point m-4 h-7 w-9 rounded-full bg-amber-600"></div>
+                            <div class="date flex w-fit flex-col">
+                                <div class="flex flex-row">
+                                    <h4 class="m-1 min-w-fit">2014-2023</h4>
+                                    <h4 class="m-1 min-w-fit">Festival Cidre & Dragon</h4>
+                                    <p class="m-1 min-w-fit">– Merville-Franceville-Plage</p>
+                                </div>
+                                <div class="flex flex-col">
+                                    <h5 class="m-1 w-full">Responsable implantations, goodies, hygiène, multimédia,
+                                        membres
+                                        du conseil d’administration et du bureau.</h5>
+                                    <p class="m-1">Création, Préparation et installation du festival, gestion d’équipes
+                                        bénévoles, Préconisation et choix de partenaires, fournisseurs et artistes,
+                                        création
+                                        du site web.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="corpsCol2-expProContainer-datePointContainer-datePoint">
+                            <div class="corpsCol2-expProContainer-datePointContainer-datePoint-point"></div>
+                            <div class="corpsCol2-expProContainer-datePointContainer-datePoint-date"></div>
+                            <h4>2015-2016</h4>
+                            <h4> Divers mission d’intérim</h4>
+                            <p> France</p>
+                            <h5>Chauffeur routier</h5>
+
+                            <h4> Tour de France à la voile</h4>
+                            <p> Transport, sortie et mise à l’eau de zodiacs.</p>
+                            <h4> Bivouac</h4>
+                            <p> Conduite et installation d’un camion cuisine sur divers événements en France.</p>
+
+                        </div>
+                    </div>
+                    <div class="corpsCol2-expProContainer-datePointContainer-datePoint">
+                        <div class="corpsCol2-expProContainer-datePointContainer-datePoint-point"></div>
+                        <div class="corpsCol2-expProContainer-datePointContainer-datePoint-date"></div>
+                        <h4>2014</h4>
+                        <h3> Jeux Equestres Mondiaux </h3>
+                        <p>Caen</p>
+                        <h4>Référent logistique</h4>
+                        <p> Création, installation et gestion des plateformes logistique des sites d’épreuves
+                            Gestion de la plateforme logistique et de son équipe sur le site principale</p>
+                    </div>
+                </div>
+                <div class="corpsCol2-expProContainer-datePointContainer-datePoint">
+                    <div class="corpsCol2-expProContainer-datePointContainer-datePoint-point"></div>
+                    <div class="corpsCol2-expProContainer-datePointContainer-datePoint-date"></div>
+                    <p>2011-2015</p>
+                    <h3>Haras d’Orion</h3>
+                    <p>Prêtreville </p>
+                    <h4>Dirigeant</h4>
+                    <p> Débourrage, entrainement, soins, manipulations, éducation de chevaux, entretien des
+                        pâtures et du
+                        domaine, saillies, poulinage, gestion comptable, administrative et sanitaire, gestion du
+                        personnel.</p>
+                </div>
+            </div>
+            <div class="corpsCol2-expProContainer-datePointContainer-datePoint">
+                <div class="corpsCol2-expProContainer-datePointContainer-datePoint-point"></div>
+                <div class="corpsCol2-expProContainer-datePointContainer-datePoint-date"></div>
+                <p>2010</p>
+                <p> Écuries Michel Hécart – La Roque Baignarde - Assistant d’élevage
+                    Soins et manipulation de chevaux, poulinières et foal, saillies et poulinage, entretien
+                    des pâtures
+                    et du domaine.</p>
+            </div>
+            </div>
+            <div class="corpsCol2-expProContainer-datePointContainer-datePoint">
+                <div class="corpsCol2-expProContainer-datePointContainer-datePoint-point"></div>
+                <div class="corpsCol2-expProContainer-datePointContainer-datePoint-date"></div>
+                <p>2006-2009</p>
+                <p> TNT Express France – Le Havre -Responsable de dépôt
+                    Gestion de l’agence, définition de la politique de travail
+                    Détermination et gestion des tournées de livraisons et ramassages.
+                    Choix et suivi des fournisseurs et prestataires, encadrement et gestion du personnel.
+                </p>
+            </div>
+            </div>
+            <div class="corpsCol2-expProContainer-datePointContainer-datePoint">
+                <div class="corpsCol2-expProContainer-datePointContainer-datePoint-point"></div>
+                <div class="corpsCol2-expProContainer-datePointContainer-datePoint-date"></div>
+                <p>2005-2006</p>
+                <p> TOTAL RN – Gonfreville l’Orcher - Gestionnaire de stocks - Projet DHC
+                    Gestion des stocks de tuyauteries préfabriquées et piping, gestion des équipes de
+                    levage.</p>
+            </div>
+            </div>
+            <div class="corpsCol2-expProContainer-datePointContainer-datePoint">
+                <div class="corpsCol2-expProContainer-datePointContainer-datePoint-point"></div>
+                <div class="corpsCol2-expProContainer-datePointContainer-datePoint-date"></div>
+                <p>2004</p>
+                <p> EDF Centre de Recherche – Clamart - (Détaché par STERIA) - Logisticien
+                    Gestion des stocks de matériel informatique, suivi des SAV fournisseurs, interventions
+                    hardware.</p>
+            </div>
+            </div>
+            <div class="corpsCol2-expProContainer-datePointContainer-datePoint">
+                <div class="corpsCol2-expProContainer-datePointContainer-datePoint-point"></div>
+                <div class="corpsCol2-expProContainer-datePointContainer-datePoint-date"></div>
+                <p>2001-2003</p>
+                <p> TRANSTECHNOPOLE – Plaisir - Adjoint directeur de site – Support de dépôt
+                    Gestion de la vie du site et de son personnel, mise en place, analyse et validation des
+                    indicateurs et tableaux de bord
+                    Réorganisation des superficies et de leur exploitation, développement d’outils de
+                    gestion et des
+                    projets clients.</p>
+            </div>
+            </div>
+            <div class="corpsCol2-expProContainer-datePointContainer-datePoint">
+                <div class="corpsCol2-expProContainer-datePointContainer-datePoint-point"></div>
+                <div class="corpsCol2-expProContainer-datePointContainer-datePoint-date"></div>
+                <p>2001</p>
+                <p> PROJETEL.COM – Nanterre – Responsable logistique - achats
+                    Création et gestion des services : logistique et achats, encadrement des équipes
+                    Refonte intégrale et gestion du parc de véhicules pour l’ensemble du groupe, gestion des
+                    services
+                    généraux, formation du personnel du groupe.</p>
+            </div>
+            </div>
+            <div class="corpsCol2-expProContainer-datePointContainer-datePoint">
+                <div class="corpsCol2-expProContainer-datePointContainer-datePoint-point"></div>
+                <div class="corpsCol2-expProContainer-datePointContainer-datePoint-date"></div>
+                <p>1999-2001</p>
+                <p> FODENO – Le Havre -Formateur logistique
+                    Enseignement de l’exploitation des transports et de la gestion de stocks classe de BAC
+                    pro
+                    Logistique et transport, classe de remise à niveau orientation magasinage, surveillant
+                    examen BEP
+                    magasinage.</p>
+            </div>
+            </div>
+            <div class="corpsCol2-expProContainer-datePointContainer-datePoint">
+                <div class="corpsCol2-expProContainer-datePointContainer-datePoint-point"></div>
+                <div class="corpsCol2-expProContainer-datePointContainer-datePoint-date"></div>
+                <p>1995-1998</p>
+                <p> LEROY MERLIN – Montivilliers - Employé logistique, cariste, vendeur
+                    Contrôle d’arrivages, gestion de stocks, Préparation de commandes et services clients
+                    Préparation d’inventaire, Approvisionnement rayon, ventes.</p>
+            </div>
+            </div>
+            <div class="corpsCol2-expProContainer-datePointContainer-datePoint">
+                <div class="corpsCol2-expProContainer-datePointContainer-datePoint-point"></div>
+                <div class="corpsCol2-expProContainer-datePointContainer-datePoint-date"></div>
+                <p>1992-1995</p>
+                <p> EUROWAY – Le Havre - Mécanicien poids lourds
+                    Entretien et préparation aux mines d’un parc de semi-remorques.
+                    Contrôle journalier pendant les transferts gare-ferry</p>
+            </div>
+            </div>
+            </div>
+            </div>
             </div>
         </section>
 
     </main>
-    <footer class="footer">
-
-        <img class="footer-logo" src="./assets/logos/Logo_Mesen/Logo_M 150x150.png" alt="Erik Mesen">
+    <!-- <footer class="footer">
+        <img class="footer-logo" src="./assets/logos/Logo_Mesen/Logo_M_150x150.webp" alt="Logo Erik Mesen">
         <div class="footer-legal">
-            <a href="#">Contact</a>
+            <a href="mailto:mesen.erik@gmail.com">Contact</a>
             <a href="#">Mentions Légales</a>
         </div>
-    </footer>
+    </footer> -->
+    <script src="./src/JS/script.js"></script>
 </body>
 
 </html>
