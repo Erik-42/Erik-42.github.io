@@ -9,11 +9,11 @@ function toggleNav() {
     toggledMenu.classList.toggle("-translate-y-full")
 
     if (toggledMenu.classList.contains("-translate-y-full")) {
-        toggleMenuImg.setAttribute("src", "./src/assets/logos/logo_menu/menu.svg")
+        toggleMenuImg.setAttribute("src", "./assets/logos/logo_menu/menu.svg")
         toggleMenuBtn.setAttribute("aria-expanded", "false")
     }
     else {
-        toggleMenuImg.setAttribute("src", "./src/assets/logos/logo_menu/cross.svg")
+        toggleMenuImg.setAttribute("src", "./assets/logos/logo_menu/cross.svg")
         toggleMenuBtn.setAttribute("aria-expanded", "true")
     }
 }

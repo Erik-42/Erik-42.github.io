@@ -1,160 +1,177 @@
-<a name="readme-top"></a>
-<!---
-Erik-42/Erik-42 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+# Frontend Mentor - QR code component
 
-[![GitHub followers][GitHub followers-shield]][GitHub followers-url]
-[![Stargazers][stars-shield]][stars-url]
-[![GitHub repo][GitHub repo-shield]][GitHub repo-url]
-[![wakatime](https://wakatime.com/badge/user/a7f49ac0-396b-43df-bdbd-01099e48c983.svg)](https://wakatime.com/@a7f49ac0-396b-43df-bdbd-01099e48c983)
-<!-- [![Contributors][contributors-shield]][contributors-url] -->
-<!-- [![Forks][forks-shield]][forks-url] -->
-<!-- [![Issues][issues-shield]][issues-url] -->
-<!-- [![MIT License][license-shield]][license-url] -->
-<!-- [![GitHub repo file count (file type)][GitHub repo file count (file type)-shield]][GitHub repo file count (file type)-url] -->
-<!-- [![GitHub repo size][GitHub repo size-shield]][GitHub repo size-url] -->
-<!-- [![GitHub all releases][GitHub all releases-shield]][GitHub all releases-url] -->
+![Design preview for the QR code component coding challenge](./design/desktop-preview.jpg)
 
-- 👋 Hi, I’m @ Erik Mesen
-- 👀 I’m interested in IT in general and the development of applications. i'm also very attracted to artificial intelligence.
-- 🌱 I’m currently learning at OpenClassRoom.
-- 💞️ I’m looking to collaborate on differeents frontend an backend projects in order to improve my skills.
-- 📫 How to reach me  <a href="#contact">Contact</a>
-  
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <h1>Work</h1>
-  <a href="https://github.com/Erik-42">
-    <img src="./src/assets/images/wip/giphy.gif" alt="Work In Progress" width="400" height="100">
-  </a>
-</div>
+## Welcome! 👋
 
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li><a href="#bio">Bio</a>
-      <ul>
-        <li><a href="#français">Français</a></li> 
-        <li><a href="#english">English</a></li>
-      </ul>
-    </li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ol>
-</details>
+Thanks for checking out this front-end coding challenge.
 
+[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
 
-# Bio
+**To do this challenge, you need a basic understanding of HTML and CSS.**
 
-### Français
-Je suis passionné d’informatique et autodidacte dans le domaine depuis ma plus tendre enfance. Je suis de cette génération qui a connus les premiers ordinateurs et grandit avec, petit je passais des heures à démonter, remonter et paramétrer les miens pour en comprendre le fonctionnement.
+## The challenge
 
-Ce qui m'a motivé aujourd’hui à me reconvertir dans ce domaine, outre la passion qui m’anime, c’est la soif de savoir, de curiosité et de création, dans le développement d'applications frontend et backend.
+Your challenge is to build out this QR code component and get it looking as close to the design as possible.
 
-Je suis également très attiré par la cybersécurité sous ces différents aspect comme l'OSINT ou le pentest ainsi que par les intelligence artificielles et leurs progrès fulgurants ces dernières années.
+You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
 
-### English
-I am passionate about computers and self-taught in the field since my childhood. I am of this generation who knew the first computers and grew up with them, I spent hours dismantling, reassembling and configuring mine to understand how it worked.
+Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
 
-What motivated me today to retrain in this field in addition to the passion that drives me is the thirst for knowledge, curiosity and creation, in the development of frontend and backend applications.
+## Where to find everything
 
-I am also very attracted by cybersecurity in its various aspects such as OSINT or pentest as well as by artificial intelligence and its dazzling progress in recent years.
+Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design.
 
-# Skills <img src = "https://raw.githubusercontent.com/rahulbanerjee26/githubProfileReadmeGenerator/main/gifs/code.gif" width = 32px height=32px>
-<p> </p>
-<a href= https://github.com/https://github.com/Erik-42?tab=repositories&q=&type=&language=html&sort= > <img width ='32px' height='32px' src ='https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/html.svg'> </a>
-<a href= https://github.com/https://github.com/Erik-42?tab=repositories&q=&type=&language=css&sort= > <img width ='32px' height='32px' src ='https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/css.svg'> </a>
-<a href= https://github.com/https://github.com/Erik-42?tab=repositories&q=&type=&language=javascript&sort= > <img width ='32px' height='32px' src ='https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/javascript.svg'> </a>
-<a href= https://github.com/https://github.com/Erik-42?tab=repositories&q=&type=&language=reactjs&sort= > <img width ='32px' height='32px' src ='https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/reactjs.svg'> </a>
-<a href= https://github.com/https://github.com/Erik-42?tab=repositories&q=&type=&language=nodejs&sort= > <img width ='32px' height='32px' src ='https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/nodejs.svg'> </a>
-<a href= https://github.com/https://github.com/Erik-42?tab=repositories&q=&type=&language=express&sort= > <img width ='32px' height='32px' src ='https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/express.svg'> </a>
-<a href= https://github.com/https://github.com/Erik-42?tab=repositories&q=&type=&language=mongodb&sort= > <img width ='32px' height='32px' src ='https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/mongodb.svg'> </a>
-<a href= https://github.com/https://github.com/Erik-42?tab=repositories&q=&type=&language=php&sort= > <img width ='32px' height='32px' src ='https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/php.svg'> </a>
-<a href= https://github.com/https://github.com/Erik-42?tab=repositories&q=&type=&language=mysql&sort= > <img width ='32px' height='32px' src ='https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/mysql.svg'> </a>
-<a href= https://github.com/https://github.com/Erik-42?tab=repositories&q=&type=&language=photoshop&sort= > <img width ='32px' height='32px' src ='https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/photoshop.svg'> </a>
-<a href= https://github.com/https://github.com/Erik-42?tab=repositories&q=&type=&language=figma&sort= > <img width ='32px' height='32px' src ='https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/figma.svg'> </a>
-<a href= https://github.com/https://github.com/Erik-42?tab=repositories&q=&type=&language=github&sort= > <img width ='32px' height='32px' src ='https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/github.svg'> </a>
-<a href= https://github.com/https://github.com/Erik-42?tab=repositories&q=&type=&language=wordpress&sort= > <img width ='32px' height='32px' src ='https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/wordpress.svg'> </a>
+The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`.
 
+If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
 
-<!-- ## Languages
-* HTML
-* CSS
-* Scss
-* JavaScript
+You will find all the required assets in the `/images` folder. The assets are already optimized.
 
-## Framework
-* React
-* Node.js
-* Express.js
+There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
 
-## Base de données
-* MongoDb
-* MySQL
+## Building your project
 
-## Serveur
-* Apache -->
+Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
 
-<!-- CONTACT -->
-# Contact <img src='https://raw.githubusercontent.com/rahulbanerjee26/githubProfileReadmeGenerator/main/gifs/handShake.gif' width="50px" height=50px>
+1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
+2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
+3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
+4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
+5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
+6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
 
+## Deploying your project
 
-<!-- Profil Link: [https://github.com/Erik-42](https://github.com/Erik-42) -->
-[![Github Badge][Github Badge-shield]][Github Badge-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+As mentioned above, there are many ways to host your project for free. Our recommend hosts are:
 
-Malt
+- [GitHub Pages](https://pages.github.com/)
+- [Vercel](https://vercel.com/)
+- [Netlify](https://www.netlify.com/)
 
-Fiverr
+You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
 
-erik.mesen@basillecorp.dev
+## Create a custom `README.md`
 
-basillecorp.dev
+We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
 
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[product-screenshot]: ./images/screenshot.png
+Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
 
-[wakatime-shield]: https://wakatime.com/badge/user/f84d00d8-fee3-4ca3-803d-3daa3c7053a5.svg
-[wakatime-url]: https://wakatime.com/@f84d00d8-fee3-4ca3-803d-3daa3c7053a5
-[Github Badge-shield]: https://img.shields.io/badge/Github-Erik--42-155?style=for-the-badge&logo=github
-[Github Badge-url]: https://github.com/Erik-42
-[GitHub repo-shield]: https://img.shields.io/badge/Repositories-22-blue
-[GitHub repo-url]: https://github.com/Erik-42?tab=repositories
-[GitHub repo file count (file type)-shield]: https://img.shields.io/github/directory-file-count/Erik-42/openclassrooms_projet_8
-[GitHub repo file count (file type)-url]:  https://github.com/directory-file-count/Erik-42/openclassrooms_projet_8
-[GitHub followers-shield]: https://img.shields.io/github/followers/Erik-42
-[GitHub followers-url]: https://github.com/followers/Erik-42
-[GitHub all releases-shield]: https://img.shields.io/github/downloads/Erik-42/openclassrooms_projet_8/total
-[GitHub all releases-url]: https://github.com/Erik-42/openclassrooms_projet_8/releases
-[GitHub repo size-shield]: https://img.shields.io/github/repo-size/Erik-42/openclassrooms_projet_8
-[GitHub repo size-url]: https://github.com/Erik-42/openclassrooms_projet_8
-[contributors-shield]: https://img.shields.io/github/contributors/Erik-42/openclassrooms_projet_8
-[contributors-url]: https://github.com/Erik-42/openclassrooms_projet_8/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/Erik-42/openclassrooms_projet_8
-[forks-url]: https://github.com/Erik-42/openclassrooms_projet_8/forks
-[stars-shield]: https://img.shields.io/github/stars/Erik-42
-[stars-url]: https://github.com/Erik-42?tab=stars
-[issues-shield]: https://img.shields.io/github/issues-raw/Erik-42/openclassrooms_projet_8
-[issues-url]: https://github.com/Erik-42/openclassrooms_projet_8/issues
-[license-shield]: https://img.shields.io/github/license/Erik-42/openclassrooms_projet_8
-[license-url]: https://github.com/Erik-42/openclassrooms_projet_7/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://www.linkedin.com/in/erik-mesen/
-[HTML-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[HTML-url]: https://html.spec.whatwg.org/
-[CSS-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[CSS-url]: https://www.w3.org/TR/CSS/#css
-[JavaScript-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[JavaScript-url]: https://www.ecma-international.org/publications-and-standards/standards/ecma-262/
-[Node-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[Node-url]: https://nodejs.org/
-[Express-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[Express-url]: http://expressjs.com/
-[MongoDB-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[MongoDB-url]: https://www.mongodb.com/
+## Submitting your solution
+
+Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+
+Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+
+## Sharing your solution
+
+There are multiple places you can share your solution:
+
+1. Share your solution page in the **#finished-projects** channel of the [Slack community](https://www.frontendmentor.io/slack).
+2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
+3. Share your solution on other social channels like LinkedIn.
+4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
+
+We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback.
+
+The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
+
+## Got feedback for us?
+
+We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
+
+This challenge is completely free. Please share it with anyone who will find it useful for practice.
+
+**Have fun building!** 🚀
+
+---FR
+
+# Frontend Mentor - Composant de code QR
+
+![Aperçu de conception pour le défi de codage de composant de code QR](./design/desktop-preview.jpg)
+
+## Accueillir! 👋
+
+Merci d'avoir relevé ce défi de codage frontal.
+
+Les défis [Frontend Mentor](https://www.frontendmentor.io) vous aident à améliorer vos compétences en codage en créant des projets réalistes.
+
+**Pour relever ce défi, vous avez besoin de connaissances de base en HTML et CSS.**
+
+## Le défi
+
+Votre défi consiste à créer ce composant de code QR et à le rendre aussi proche que possible de la conception.
+
+Vous pouvez utiliser tous les outils que vous aimez pour vous aider à relever le défi. Donc, si vous avez quelque chose que vous aimeriez pratiquer, n'hésitez pas à l'essayer.
+
+Vous voulez un soutien pour relever le défi ? [Rejoignez notre communauté Slack](https://www.frontendmentor.io/slack) et posez des questions sur le canal **#help**.
+
+## Où tout trouver
+
+Votre tâche consiste à construire le projet sur les conceptions à l'intérieur du dossier `/design`. Vous trouverez à la fois une version mobile et une version de bureau de la conception.
+
+Les dessins sont au format statique JPG. L'utilisation de JPG signifie que vous devrez utiliser votre meilleur jugement pour des styles tels que `font-size`, `padding` et `margin`.
+
+Si vous souhaitez que les fichiers de conception (nous fournissons les versions Sketch & Figma) inspectent la conception plus en détail, vous pouvez [vous abonner en tant que membre PRO] (https://www.frontendmentor.io/pro).
+
+Vous trouverez tous les éléments requis dans le dossier `/images`. Les actifs sont déjà optimisés.
+
+Il existe également un fichier `style-guide.md` contenant les informations dont vous aurez besoin, telles que la palette de couleurs et les polices.
+
+## Construire votre projet
+
+N'hésitez pas à utiliser n'importe quel flux de travail avec lequel vous vous sentez à l'aise. Vous trouverez ci-dessous un processus suggéré, mais ne vous sentez pas obligé de suivre ces étapes :
+
+1. Initialisez votre projet en tant que dépôt public sur [GitHub](https://github.com/). La création d'un référentiel facilitera le partage de votre code avec la communauté si vous avez besoin d'aide. Si vous ne savez pas comment procéder, [lisez attentivement cette ressource Try Git](https://try.github.io/).
+2. Configurez votre référentiel pour publier votre code sur une adresse Web. Cela sera également utile si vous avez besoin d'aide lors d'un défi, car vous pouvez partager l'URL de votre projet avec votre URL de dépôt. Il existe plusieurs façons de le faire, et nous fournissons quelques recommandations ci-dessous.
+3. Examinez les conceptions pour commencer à planifier la manière dont vous aborderez le projet. Cette étape est cruciale pour vous aider à anticiper les classes CSS afin de créer des styles réutilisables.
+4. Avant d'ajouter des styles, structurez votre contenu avec HTML. Écrire d'abord votre code HTML peut vous aider à concentrer votre attention sur la création d'un contenu bien structuré.
+5. Écrivez les styles de base de votre projet, y compris les styles de contenu généraux, tels que `font-family` et `font-size`.
+6. Commencez à ajouter des styles en haut de la page et descendez. Ne passez à la section suivante que lorsque vous êtes satisfait d'avoir terminé le domaine sur lequel vous travaillez.
+
+## Déploiement de votre projet
+
+Comme mentionné ci-dessus, il existe de nombreuses façons d'héberger votre projet gratuitement. Nos hôtes recommandés sont :
+
+- [Pages GitHub](https://pages.github.com/)
+- [Vercel](https://vercel.com/)
+- [Netlify](https://www.netlify.com/)
+
+Vous pouvez héberger votre site en utilisant l'une de ces solutions ou l'un de nos autres fournisseurs de confiance. [En savoir plus sur nos hébergeurs recommandés et de confiance](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+
+## Créer un `README.md` personnalisé
+
+Nous vous recommandons fortement de remplacer ce `README.md` par un fichier personnalisé. Nous avons fourni un modèle dans le fichier [`README-template.md`](./README-template.md) dans ce code de démarrage.
+
+Le modèle fournit un guide pour ce qu'il faut ajouter. Un `README` personnalisé vous aidera à expliquer votre projet et à réfléchir sur vos apprentissages. N'hésitez pas à modifier notre modèle autant que vous le souhaitez.
+
+Une fois que vous avez ajouté vos informations au modèle, supprimez ce fichier et renommez le fichier `README-template.md` en `README.md`. Cela le fera apparaître comme le fichier README de votre référentiel.
+
+## Soumettre votre solution
+
+Soumettez votre solution sur la plateforme pour que le reste de la communauté puisse la voir. Suivez notre ["Guide complet pour soumettre des solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) pour obtenir des conseils sur la façon de procéder ce.
+
+N'oubliez pas que si vous souhaitez obtenir des commentaires sur votre solution, assurez-vous de poser des questions lorsque vous la soumettez. Plus vos questions sont précises et détaillées, plus vous avez de chances d'obtenir des commentaires précieux de la part de la communauté.
+
+## Partage de votre solution
+
+Vous pouvez partager votre solution à plusieurs endroits :
+
+1. Partagez votre page de solution dans le canal **#finished-projects** de la [communauté Slack](https://www.frontendmentor.io/slack).
+2. Tweetez [@frontendmentor](https://twitter.com/frontendmentor) et mentionnez **@frontendmentor**, y compris le référentiel et les URL en direct dans le tweet. Nous serions ravis de jeter un œil à ce que vous avez construit et de vous aider à le partager.
+3. Partagez votre solution sur d'autres réseaux sociaux comme LinkedIn.
+4. Blog à propos de votre expérience dans la construction de votre projet. Écrire sur votre flux de travail, vos choix techniques et parler de votre code est un excellent moyen de renforcer ce que vous avez appris. [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/) et [CodeNewbie](https://community.codenewbie.org /).
+
+Nous fournissons des modèles pour vous aider à partager votre solution une fois que vous l'avez soumise sur la plateforme. Veuillez les modifier et inclure des questions spécifiques lorsque vous recherchez des commentaires.
+
+Plus vous êtes précis dans vos questions, plus il est probable qu'un autre membre de la communauté vous fasse part de ses commentaires.
+
+## Vous avez des commentaires pour nous ?
+
+Nous aimons recevoir des commentaires ! Nous cherchons toujours à améliorer nos défis et notre plateforme. Donc, si vous souhaitez mentionner quelque chose, veuillez envoyer un e-mail à hi[at]frontendmentor[dot]io.
+
+Ce défi est entièrement gratuit. Veuillez le partager avec tous ceux qui le trouveront utile pour la pratique.
+
+**Amusez-vous à construire !** 🚀

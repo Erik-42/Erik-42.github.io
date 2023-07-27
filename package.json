@@ -2,30 +2,27 @@
   "name": "Erik-42.github.io",
   "version": "1.0.0",
   "description": "Création du portfolio de Erik Mesen",
-  "main": "./index.html",
+  "main": "tailwind.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tailwindcss build ./src/scss/input.css -o ./src/scss/output.css",
-    "watch":"postcss build ./src/scss/input.css -o ./src/scss/output.css --watch",
-    "dev": "yarn run build --watch",
-    "prod": "cross-env NODE_ENV=production postcss ./src/scss/input.css -o ./public/style.css"
+    "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "watch": "postcss build ./src/input.css -o ./dist/output.css --watch",
+    "prod": "cross-env NODE_ENV=production postcss ./src/input.css -o ./public/style.css"
   },
-  "author": "Erik-42",
+  "author": "",
   "license": "ISC",
   "devDependencies": {
-    "postcss": "^8.4.27",
-    "postcss-cli": "^10.1.0",
-    "postcss-import": "^15.1.0",
     "@tailwindcss/forms": "^0.5.4",
-    "@tailwindcss/typography": "^0.5.9",
-    "@tailwindcss/aspect-ratio": "^0.4.2"
+    "autoprefixer": "^10.4.14",
+    "cross-env": "^7.0.3",
+    "cssnano": "^6.0.1",
+    "postcss": "^8.4.27",
+    "tailwindcss": "^3.3.3",
+    "tailwindcss-aspect-ratio": "^3.0.0",
+    "tailwindcss-typography": "^3.1.0"
   },
   "dependencies": {
-    "tailwindcss": "^3.3.3",
-    "autoprefixer": "^10.4.14",
-    "children": "^0.2.3",
-    "cross-env": "^7.0.3"
-  },
-  "repository": "https://github.com/Erik-42/Erik-42.github.io.git",
-  "private": false
+    "postcss-cli": "^10.1.0",
+    "postcss-import": "^15.1.0"
+  }
 }
