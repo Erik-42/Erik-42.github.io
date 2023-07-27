@@ -1,30 +1,31 @@
 {
-  "name": "test_projet",
+  "name": "Erik-42.github.io",
   "version": "1.0.0",
-  "description": "Test de tailwincss",
-  "main": "/src/index.html",
+  "description": "Création du portfolio de Erik Mesen",
+  "main": "./index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tailwindcss build ./src/scss/input.css -o ./src/scss/output.css",
+    "watch":"postcss build ./src/scss/input.css -o ./src/scss/output.css --watch",
+    "dev": "yarn run build --watch",
+    "prod": "cross-env NODE_ENV=production postcss ./src/scss/input.css -o ./public/style.css"
   },
   "author": "Erik-42",
   "license": "ISC",
   "devDependencies": {
-    "@tailwindcss/forms": "^0.5.4",
-    "@tailwindcss/typography": "^0.5.9",
-    "tailwindcss": "^3.3.3"
-  },
-  "dependencies": {
-    "@tailwindcss/aspect-ratio": "^0.4.2",
-    "autoprefixer": "^10.4.14",
-    "children": "^0.2.3",
-    "cross-env": "^7.0.3",
     "postcss": "^8.4.27",
     "postcss-cli": "^10.1.0",
-    "postcss-import": "^15.1.0"
+    "postcss-import": "^15.1.0",
+    "@tailwindcss/forms": "^0.5.4",
+    "@tailwindcss/typography": "^0.5.9",
+    "@tailwindcss/aspect-ratio": "^0.4.2"
   },
-  "script": {
-    "build": "tailwind build ./src/scss/input.css -o ./src/scss/output.css",
-    "dev": "npm run build --watch",
-    "production": "cross-env NODE_ENV=production postcss input.css -o output.css"
-  }
+  "dependencies": {
+    "tailwindcss": "^3.3.3",
+    "autoprefixer": "^10.4.14",
+    "children": "^0.2.3",
+    "cross-env": "^7.0.3"
+  },
+  "repository": "https://github.com/Erik-42/Erik-42.github.io.git",
+  "private": false
 }

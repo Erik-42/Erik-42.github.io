@@ -1,13 +1,12 @@
-/** @type {imort('tailwindcss').config} */
+/** @type {import('tailwindcss').config} */
 const defaultTheme = require('tailwindcss/defaultTheme')
 module.exports = {
     purge: {
         preserveHtmlElements: false,
-        content: ['./*.html,.js'],
+        content: ['./src/**/*{.html,.js,.jsx}'],
     },
     darkmode: false,
-    content: ["./**/*.{html,js}"],
-
+    content: { relative: true, files: ['./src/**/*{.html,.js,.jsx}'] },
     theme: {
         extend: {
             fontFamily: {
@@ -31,6 +30,7 @@ module.exports = {
         // require('@tailwindcss/forms'),
         // require('@tailwindcss/typography'),
         // require('@tailwindcss/aspect-ratio'),
-        // require('tailwindcss-children')
+        // require('tailwindcss-children'),
+        // require('@tailwindcss/line-clamp@latest')
     ],
 }
