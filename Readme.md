@@ -112,7 +112,8 @@ Fiverr: https://fr.fiverr.com/erikmesen
 
 erik.mesen@basillecorp.dev
 
-basillecorp.dev
+https://erik-42.github.io/
+<!-- basillecorp.dev -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
