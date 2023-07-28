@@ -106,9 +106,9 @@ I am also very attracted by cybersecurity in its various aspects such as OSINT o
 [![Github Badge][Github Badge-shield]][Github Badge-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-Malt
+Malt: https://www.malt.fr/profile/erikmesen
 
-Fiverr
+Fiverr: https://fr.fiverr.com/erikmesen
 
 erik.mesen@basillecorp.dev
 
