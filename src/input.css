@@ -4,10 +4,10 @@
 
 @font-face {
     font-family: "ORCHIDEEL";
-    src: url("./assets/fonts/ORCHL.TTF");
+    src: url("../public/fonts/ORCHL___.TTF");
 };
 
 @font-face {
     font-family: "ORCHIDEEM";
-    src: url("./assets/fonts/ORCHM.TTF");
+    src: url("../public/fonts/ORCHM___.TTF");
 };
