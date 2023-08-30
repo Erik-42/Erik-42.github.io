@@ -1,0 +1,65 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+/* Icons */
+.icon-rewind {
+	display: block;
+	width: 2em;
+	height: 2em;
+	margin: 0 auto;
+	fill: currentColor;
+}
+
+.action {
+	/* position: absolute; */
+	top: 0;
+	right: 0;
+	background: none;
+	/* margin: 2rem; */
+	color: black;
+	border: 0;
+	padding: 0;
+	opacity: 0;
+	pointer-events: none;
+	display: flex;
+	align-items: center;
+	z-index: 1;
+}
+
+.action:focus {
+	outline: none;
+}
+
+.particleButton {
+    --color-action: #f3f3f3;
+    --color-button-bg: rgb(255, 255, 255);
+	--color-button-text: rgb(255,255,255);
+	--button-padding: 1.8rem 4rem;
+	--radius-button: 8px;
+	--border-button: 0;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-items: center;
+	justify-content: center;
+	overflow: hidden;
+	height: 100%;
+	width: 100%;
+	background: rgb(30 41 59);
+
+}
+
+@media screen and (min-width: 768px) {
+	.particleButton {
+		height: 100%;
+		width: 100%;
+		/* padding: 0.5rem; */
+		position: absolute;
+	display: flex;
+	align-items: center;
+	justify-items: center;
+	justify-content: center;
+	}
+}

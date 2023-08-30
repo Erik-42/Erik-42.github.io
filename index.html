@@ -1,21 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/dist/output.css" rel="stylesheet">
-    <link href="/public/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/dist/output.css">
+    <link rel="stylesheet" type="text/css" href="/public/style.css">
     <meta name="theme-color" content="#000000">
     <meta name="description" content="Portfolio Erik Mesen">
     <title>Portfolio Erik Mesen</title>
     <link rel="icon" href="./assets/logos/Logo_Mesen/Logo_M.ico">
+
+    <link rel="stylesheet" type="text/css" href="./src/css/particles.css" />
+    <link rel="stylesheet" type="text/css" href="./src/css/base.css" />
+
 </head>
 
-<body>
-
-    <a class="flex justify-center content-center items-center text-center font-orchideem font-extrabold
-            text-amber-600" href="src/index.html">Enter</a>
+<body class=" bg-slate-800">
+    <div class="particleButton ">
+        <button class="action ">
+            <svg id="icon-rewind" viewBox="0 0 36 20" class="absolute">
+                <title>rewind</title>
+                <path
+                    d="M16.315.061c.543 0 .984.44.984.984v17.217c0 .543-.44.983-.984.983L.328 10.391s-.738-.738 0-1.476C1.066 8.178 16.315.061 16.315.061zM35.006.061c.543 0 .984.44.984.984v17.217c0 .543-.44.984-.984.984L19.019 10.39s-.738-.738 0-1.475C19.757 8.178 35.006.06 35.006.06z" />
+            </svg>
+            <use xlink:href="#icon-rewind"></use>
+            <svg>
+            </svg>
+        </button>
+        <button class="lienDelai particles-button">
+            <a class="font-orchideem font-extrabold text-amber-600" href="./src/index.html">Enter</a>
+        </button>
+    </div>
+    <script src='./src/JS/components/button/anime.js' async defer></script>
+    <script src='./src/JS/components/button/particles.js' async defer></script>
+    <script src='./src/JS/components/button/demo.js' async defer></script>
+    <script src='./src/JS/button.js' async defer></script>
 
 </body>
 
